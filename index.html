@@ -15,7 +15,7 @@
 	<!-- End Google Tag Manager -->
 
 
-	<a href="test.html">Link Test</a>
-	<a href="http://facebook.com">Facebook</a>
+	<a href="test.html" onmouseover="dataLayer.push({'event','linkhover'});" onclick="ga('send','event','link','Test', this.href)">Link Test</a>
+	<a href="http://facebook.com" onmouseover="dataLayer.push({'event','linkhover'});" onclick="ga('send','event','link','Facebook', this.href)">Facebook</a>
 </body>
 </html>
